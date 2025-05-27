@@ -1,9 +1,13 @@
 function setup() {
-    createCanvas(800, 800);
-  }
+  createCanvas(400, 400);
+  background(220);
   
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+  let circles = [40,8,15,16,23,42,80,33,24,50,25];
+
+for( let i = 0; i < circles.length; i++ ){
+  console.log(i);
+  circle (i*40, height/2, circles[i]);
+ } 
+}
+
+function draw() {}im
