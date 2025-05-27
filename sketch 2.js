@@ -1,9 +1,16 @@
 function setup() {
-    createCanvas(800, 800);
-  }
+  createCanvas(400, 400);
+}
+
+ let taille = 1;
+
+
+function draw() {
   
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+ 
+
+  background(220,13,600);
+  
+  circle(200,200,taille);
+  taille = taille + 2;
+}

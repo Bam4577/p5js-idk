@@ -1,9 +1,15 @@
 function setup() {
-    createCanvas(800, 800);
-  }
-  
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+  createCanvas(700, 400);
+  background(220,13,600);
+}
+
+ let taille = 4;
+
+
+function draw() {
+  stroke(300);
+  strokeWeight(1,5);
+  noFill();
+  circle(200,200,taille);
+  taille = taille + 7;
+}
