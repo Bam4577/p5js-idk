@@ -4,7 +4,7 @@ function preload() {
   img = loadImage('img/test.jpg');
 }
 
-function setup() {1
+function setup() {
   createCanvas(800, 500);
   img.resize(800, 500);
   noLoop();
