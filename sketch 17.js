@@ -1,9 +1,15 @@
 function setup() {
-    createCanvas(800, 800);
+  createCanvas(200, 200);
+  noLoop();
+  background(255);
+}
+
+function draw() {
+  for (let x = 0; x < width; x += 20) {
+    for (let y = 0; y < height; y += 20) {
+      fill(random(200, 255), random(150, 200), random(200, 255));
+      noStroke();
+      ellipse(x + 10, y + 10, 10);
+    }
   }
-  
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+}
