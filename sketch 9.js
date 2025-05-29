@@ -1,9 +1,18 @@
 function setup() {
-    createCanvas(800, 800);
-  }
+  createCanvas(400, 400);
+  background(220);
+
   
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
+  for (let y = 50; y <= height; y += 50) {
+   
+    for (let x = 50; x <= width; x += 50) {
+      fill(x, y, 200); 
+      noStroke();     
+      circle(x, y, 20); 
+    }
   }
+}
+
+function draw() {
+  
+}
