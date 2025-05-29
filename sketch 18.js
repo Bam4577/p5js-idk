@@ -1,9 +1,18 @@
+let emojis = ["🌸", "🍓", "💖", "✨", "🧁"];
+
 function setup() {
-    createCanvas(800, 800);
+  createCanvas(200, 200);
+  textAlign(CENTER, CENTER);
+  textSize(16);
+  noLoop();
+}
+
+function draw() {
+  background(255);
+  for (let x = 20; x < width; x += 40) {
+    for (let y = 20; y < height; y += 40) {
+      let randEmoji = random(emojis);
+      text(randEmoji, x, y);
+    }
   }
-  
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+}
