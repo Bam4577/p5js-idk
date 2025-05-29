@@ -1,9 +1,24 @@
 function setup() {
-    createCanvas(800, 800);
-  }
+  createCanvas(400, 400);
+  background(255);
   
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+  drawFleur(200, 200);
+}
+
+function drawFleur(x, y) {
+  fill(255, 150, 200);
+
+ 
+  ellipse(x - 20, y, 40, 40);
+  ellipse(x + 20, y, 40, 40);
+  ellipse(x, y - 20, 40, 40);
+  ellipse(x, y + 20, 40, 40);
+  ellipse(x - 14, y - 14, 40, 40);
+  ellipse(x + 14, y - 14, 40, 40);
+  ellipse(x - 14, y + 14, 40, 40);
+  ellipse(x + 14, y + 14, 40, 40);
+
+
+  fill(255, 220, 100);
+  circle(x, y, 30);
+}
