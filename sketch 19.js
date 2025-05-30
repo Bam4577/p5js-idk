@@ -1,9 +1,22 @@
+let carré = 40;
+
 function setup() {
-    createCanvas(800, 800);
+  createCanvas(400, 400);
+  noStroke();
+}
+
+function draw() {
+  background(255, 240, 250);
+
+  for (let y = 0; y < height; y += carré) {
+    for (let x = 0; x < width; x += carré) {
+
+      if (mouseX > x && mouseX < x + carré && mouseY > y && mouseY < y + carré) {
+        fill(255, 180, 220);
+      } else {
+        fill(200, 230, 255);
+      }
+      rect(x, y, carré, carré, 10); 
+    }
   }
-  
-  function draw() {
-    background(107, 135, 228);
-    circle( 200,200,100 );
-    square ( 200,200,50);
-  }
+}
